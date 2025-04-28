@@ -1,0 +1,151 @@
+.section {
+  min-height: calc(100vh - 75px);
+  background-color: transparent;
+  color: white;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0px 8px;
+  text-align: center;
+  background: transparent;
+}
+
+.table th,
+.table td {
+  padding: 0.9rem;
+}
+
+.pricesRow td {
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: #0077b6;
+  color: white;
+}
+
+.cardsWrapper {
+  display: none;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 400px;
+}
+
+.card {
+  background-color: #0d1b2a;
+  padding: 2rem;
+  border: 1px solid #0077b6;
+  border-radius: 1rem;
+}
+
+.card h3 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.price {
+  color: #00B4D8;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.benefit {
+  color: rgb(213, 242, 255);
+  margin: 0.3rem 0;
+  list-style: none;
+  text-align: center;
+}
+
+.benefitOff {
+  color: #a37c7c;
+  margin: 0.3rem 0;
+  list-style: none;
+  text-align: center;
+
+}
+
+.check{
+  color: rgb(80, 214, 80);
+  font-size: 1.15rem;
+}
+.times{
+  color: rgb(252, 92, 92);
+  font-size: 1.15rem;
+}
+
+tr {
+  background: linear-gradient(90deg, #1b263b, #90e1ef27);
+}
+tr:last-child {
+  background: transparent;
+}
+
+th {
+  height: 70px;
+  width: 25%;
+  font-size: 1.5rem;
+}
+
+th:nth-of-type(2) {
+  border-radius: 8px 0 0 8px;
+  background-color: #cfac0e;
+}
+th:nth-of-type(3) {
+  background-color: #ad0fdd;
+}
+
+th:last-child {
+  border-radius: 0 8px 8px 0;
+  background-color: #15cf97;
+}
+
+.pricesRow td:first-child {
+  background-color: transparent;
+}
+.pricesRow td:nth-of-type(2) {
+  border-radius: 8px 0 0 8px;
+  background-color: #cfac0e56;
+}
+.pricesRow td:nth-of-type(3) {
+  background-color: #ad0fdd49;
+}
+.pricesRow td:nth-of-type(4) {
+  background-color: #15cf9746;
+}
+
+td:first-child {
+  text-align: left;
+  border-radius: 8px 0 0 8px;
+}
+td:last-child {
+  border-radius: 0 8px 8px 0;
+}
+
+@media (max-width: 768px) {
+  .tableWrapper {
+    display: none;
+  }
+
+  .cardsWrapper {
+    display: flex;
+  }
+}

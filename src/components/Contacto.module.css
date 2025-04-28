@@ -1,0 +1,136 @@
+.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 75px);
+  background-color: transparent;
+  color: white;
+  padding: 0rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.titulo{
+  color: white;
+  font-size: 2.5rem;
+}
+.desc{
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #1b263b, #90e1ef27);
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 3rem;
+}
+
+.image{
+    border-radius: 10px;
+    width: 36%;
+}
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.formulario p{
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.formulario input,
+.formulario textarea{
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  outline: none;
+  background: transparent;
+  font-size: 1.2rem;
+  margin-left: 5px;
+  width: auto;
+  min-width: 200px;
+  color: rgb(192, 192, 192);
+}
+
+.formulario input::placeholder,
+.formulario textarea::placeholder{
+  color: #bbbbbbc5;
+}
+
+.p1 input{
+  width: 56.69%;
+}
+.p2 input{
+  width: 49.9%;
+}
+
+.formulario textarea{
+  resize: none;
+  vertical-align: middle;
+  min-height: 140px;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.formulario hr{
+  margin: 0;
+  border: none;
+}
+
+.formulario button{
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: transparent;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  align-self: flex-end;
+}
+
+.formulario button:hover {
+  color: #90e0ef;
+}
+
+/*Responsive*/
+@media (max-width: 992px) {
+  .image{
+    width: 100%;
+    max-width: 780px;
+    height: 250px;
+    object-fit: cover;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: -2rem;
+  }
+  .formulario{
+    margin-top: 2rem;
+    max-width: 800px;
+  }
+  .formulario input{
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px){
+.desc{
+  text-align: center;
+}
+}

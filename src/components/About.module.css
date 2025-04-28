@@ -1,0 +1,92 @@
+.about {
+  min-height: calc(
+    100vh - 75px
+  ); /*Ajusta este valor si tu header mide más/menos */
+  padding: 4rem 2rem;
+  background-color: transparent;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  padding: 5rem 2rem;
+  background: linear-gradient(90deg, #1b263b, #90e1ef27);
+  border-radius: 20px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.text {
+  flex: 1 1 500px;
+}
+
+.image {
+  width: 350px;
+  height: auto;
+  border-radius: 100%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  transform: scaleX(-1);
+}
+
+.titulo {
+  color: white;
+  font-size: 2.5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.desc {
+  font-size: 1.2rem;
+  color: #ffffff;
+  text-align: justify;
+}
+
+.misVis {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: #0d1b2a;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card h3 {
+  color: #90e0ef;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  color: #adb5bd;
+  
+}
+
+/*Responsive*/
+@media (max-width: 992px){
+    .content{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+}
+@media (max-width: 600px){
+    .image{
+        width: 280px;
+    }
+}

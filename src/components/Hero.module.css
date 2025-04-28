@@ -1,0 +1,152 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 2rem;
+  min-height: calc(
+    100vh - 75px
+  ); /*Ajusta este valor si tu header mide más/menos */
+  max-width: 1200px; /* ← ancho máximo para que no se estire tanto */
+  margin: 0px auto;
+  view-timeline: --scroll;
+}
+
+.left {
+  max-width: 40%;
+  color: white;
+  animation: fade-up 1s;
+}
+.right {
+  animation: scale-up both ease-in-out, fade-away both linear;
+  animation-timeline: --scroll;
+  animation-range: exit 0% exit 100%, exit 30% exit 70%;
+}
+
+.titulo {
+  font-size: 4rem;
+  margin: 0;
+  animation: scale-up both ease-in-out, fade-away both linear;
+  animation-timeline: --scroll;
+  animation-range: exit 0% exit 80%, exit 30% exit 70%;
+}
+.subtitulo {
+  margin: 1rem 0;
+  animation: fade-away both linear;
+  animation-timeline: --scroll;
+  animation-range: exit 10% exit 60%;
+}
+.botonera {
+  max-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  animation: fade-away both linear;
+  animation-timeline: --scroll;
+  animation-range: exit 10% exit 60%;
+}
+
+.btn1 {
+  width: 85%;
+  cursor: pointer;
+  background-color: #00b4d8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 13px 0;
+  transition: color 0.2s ease;
+}
+.btn2 {
+  width: 100%;
+  cursor: pointer;
+  background-color: #1b263b;
+  color: white;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 13px 0;
+  border-color: rgb(143, 143, 143);
+  transition: background-color 0.2s ease;
+}
+
+.btn1:hover {
+  background-color: #90e0ef;
+}
+.btn2:hover {
+  background-color: #0d1b2a;
+}
+
+img {
+  width: 500px;
+  max-width: 100%;
+  animation: fade-up 1s;
+}
+
+/*Responsive*/
+
+@media (max-width: 1000px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 0rem 1rem;
+    gap: 2rem;
+    min-height: 60vh; /*Ajusta este valor si tu header mide más/menos */
+  }
+  .left {
+    margin-top: 75px;
+    max-width: 100%;
+  }
+  .titulo {
+    font-size: 3.5rem;
+  }
+  img {
+    width: 100%;
+    max-width: 550px;
+  }
+  .botonera {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 820px) {
+  .titulo {
+    font-size: 2.5rem;
+  }
+  img {
+    width: 100%;
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 680px) {
+  img {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+/*Keyframes*/
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes scale-up {
+  to {
+    scale: 1.5;
+  }
+}
+
+@keyframes fade-away {
+  to {
+    opacity: 0;
+  }
+}
