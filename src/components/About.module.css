@@ -28,7 +28,8 @@
 
 .image {
   width: 350px;
-  height: auto;
+  height: 350px;
+  object-fit: cover;
   border-radius: 100%;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
   transform: scaleX(-1);
