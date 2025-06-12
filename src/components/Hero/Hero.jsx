@@ -12,7 +12,9 @@ export default function Hero() {
           </p>
           <div className={styles.botonera}>
           <button className={styles.btn1}>Get Started</button>
-          <button className={styles.btn2}>Support Chat</button>
+          <button 
+          onClick={() => window.open("https://wa.me/5219983785158", "_blank")}
+          className={styles.btn2}>Support Chat</button>
           </div>
         </div>
         <div className={styles.right}>
