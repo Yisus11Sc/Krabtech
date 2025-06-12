@@ -1,5 +1,5 @@
 import styles from "./Hero.module.css";
-import img from '../assets/pcgamer2.png'
+import img from '../../assets/pcgamer2.png'
 import React from "react";
 
 export default function Hero() {

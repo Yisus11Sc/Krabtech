@@ -1,11 +1,11 @@
 import './App.css';
-import About from './components/About';
-import Contacto from './components/Contacto';
-import Footer from './components/Footer';
-import Hero from './components/Hero';
-import Navbar from './components/Navbar';
-import Paquetes from './components/Paquetes';
-import Services from './components/Services';
+import About from './components/About/About';
+import Contacto from './components/Contacto/Contacto';
+import Footer from './components/Footer/Footer';
+import Hero from './components/Hero/Hero';
+import Navbar from './components/Nav/Navbar';
+import Paquetes from './components/Paquetes/Paquetes';
+import Services from './components/Servicios/Services';
 
 function App() {
   return (

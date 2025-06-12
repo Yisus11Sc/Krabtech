@@ -1,5 +1,5 @@
 import styles from "./Contacto.module.css";
-import img from "../assets/contact.jpg";
+import img from "../../assets/contact.jpg";
 import React, { useState } from "react";
 
 export default function Contacto() {

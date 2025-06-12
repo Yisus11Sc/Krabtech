@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./Services.module.css";
-import imagen1 from "../assets/serv1.png";
-import imagen2 from "../assets/serv2.png";
-import imagen3 from "../assets/serv3.png";
-import imagen4 from "../assets/serv6.png";
-import imagen5 from "../assets/serv7.png";
-import imagen6 from "../assets/serv5.png";
+import imagen1 from "../../assets/serv1.png";
+import imagen2 from "../../assets/serv2.png";
+import imagen3 from "../../assets/serv3.png";
+import imagen4 from "../../assets/serv6.png";
+import imagen5 from "../../assets/serv7.png";
+import imagen6 from "../../assets/serv5.png";
 
 const services = [
   {
