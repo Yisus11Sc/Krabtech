@@ -1,5 +1,5 @@
 import styles from "./Footer.module.css";
-import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaFacebook, FaWhatsapp } from "react-icons/fa";
 
 import React from "react";
 
@@ -22,21 +22,21 @@ export default function Footer() {
 
         <div className={styles.social}>
           <a
-            href="http://facebook.com"
+            href="https://www.facebook.com/profile.php?id=61574548271319"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaFacebook />
           </a>
-          <a
+          {/* <a
             href="http://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaInstagram />
-          </a>
+          </a> */}
           <a
-            href="http://wa.me/5219991234567"
+            href="http://wa.me/5219983785158"
             target="_blank"
             rel="noopener noreferrer"
           >

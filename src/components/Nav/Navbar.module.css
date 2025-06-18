@@ -55,10 +55,21 @@
   font-size: 2rem;
   cursor: pointer;
   user-select: none;
+  transition: transform 0.3s ease;
 }
 
 .rotate {
   animation: rotateIcon 0.3s ease forwards;
+}
+
+.shadow {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 /*Responsive*/
@@ -68,7 +79,7 @@
     position: absolute;
     top: 99%;
     right: 0;
-    width: 60%;
+    width: 40%;
     flex-direction: column;
     background: linear-gradient(
       180deg,
@@ -76,7 +87,6 @@
       rgba(65, 90, 119, 0.8)
     );
     backdrop-filter: blur(10px);
-    display: none;
     padding: 0;
     overflow: hidden;
     border-bottom-left-radius: 1rem;
@@ -86,6 +96,7 @@
     transition: max-height 0.4s ease, padding 0.4s ease;
     z-index: 10;
   }
+
 
   .navbar a {
     text-align: center;
@@ -116,6 +127,14 @@
     cursor: pointer;
     user-select: none;
     color: white;
+  }
+
+  .rightSection {
+    gap: 0.5rem;
+  }
+  .header {
+    padding: 0rem 1.5rem;
+    width: 100%;
   }
 }
 

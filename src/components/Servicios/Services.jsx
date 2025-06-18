@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Services.module.css";
+import Modal from "./Modal/Modal";
 import imagen1 from "../../assets/serv1.png";
 import imagen2 from "../../assets/serv2.png";
 import imagen3 from "../../assets/serv3.png";
@@ -41,18 +42,28 @@ const services = [
 ];
 
 export default function Services() {
+  const [selectedService, setSelectedService] = useState(null);
+
+  const handleOpen = (service) => {
+    setSelectedService(service);
+  };
+
+  const handleClose = () => {
+    setSelectedService(null);
+  };
   return (
     <section id="servicios" className={styles.container}>
       <h2 className={styles.title}>Nuestros Servicios</h2>
       <div className={styles.grid}>
         {services.map((service, idx) => (
-          <div className={styles.card} key={idx}>
+          <div className={styles.card} key={idx} onClick={() => handleOpen(service)}>
             <img src={service.img} alt={service.title} />
             <h3>{service.title}</h3>
             <p>{service.desc}</p>
           </div>
         ))}
       </div>
+      <Modal service={selectedService} onClose={handleClose} />
     </section>
   );
 }
