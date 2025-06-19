@@ -1,8 +1,11 @@
 import styles from "./Navbar.module.css";
 import React, { useEffect, useState } from "react";
 import Idioma from "./Idioma/Idioma";
+import { useLanguage } from "../Context/LanguageContext";
 
 export default function Navbar() {
+    const { texts } = useLanguage();
+  
 
   /* Sombra de nav al scrollear */
   const [scrolled, setScrolled] = useState(false);
@@ -32,16 +35,16 @@ useEffect(() => {
   }, [isOpen]);
 
   return (
-    <header className={`${styles.header} ${scrolled ? styles.shadow : ""}`}>
+    <header id="navbar" className={`${styles.header} ${scrolled ? styles.shadow : ""}`}>
       <h1 className={styles.titulo}>Krabtech</h1>
       
       <div className={styles.rightSection}>
         <nav className={`${styles.navbar} ${isOpen ? styles.show : ""}`}>
-          <a href="#inicio" onClick={() => setIsOpen(false)}>Inicio</a>
-          <a href="#servicios" onClick={() => setIsOpen(false)}>Servicios</a>
-          <a href="#paquetes" onClick={() => setIsOpen(false)}>Paquetes</a>
-          <a href="#nosotros" onClick={() => setIsOpen(false)}>Nosotros</a>
-          <a href="#contacto" onClick={() => setIsOpen(false)}>Contacto</a>
+          <a href="#inicio" onClick={() => setIsOpen(false)}>{texts.navbar.home}</a>
+          <a href="#servicios" onClick={() => setIsOpen(false)}>{texts.navbar.servicios}</a>
+          <a href="#paquetes" onClick={() => setIsOpen(false)}>{texts.navbar.paquetes}</a>
+          <a href="#nosotros" onClick={() => setIsOpen(false)}>{texts.navbar.nosotros}</a>
+          <a href="#contacto" onClick={() => setIsOpen(false)}>{texts.navbar.contacto}</a>
         </nav>
 
         <Idioma />

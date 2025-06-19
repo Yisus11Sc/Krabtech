@@ -2,22 +2,25 @@ import styles from "./Footer.module.css";
 import { FaFacebook, FaWhatsapp } from "react-icons/fa";
 
 import React from "react";
+import { useLanguage } from "../Context/LanguageContext";
 
 export default function Footer() {
+
+  const {texts} = useLanguage();
   return (
-    <footer className={styles.footer}>
+    <footer id="footer" className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.logo}>
           <h2>Krabtech</h2>
-          <p>Soluciones Tecnologicas en Cancun</p>
+          <p>{texts.footer.desc}</p>
         </div>
 
         <div className={styles.links}>
-          <a href="#inicio">Inicio</a>
-          <a href="#servicios">Servicios</a>
-          <a href="#paquetes">Paquetes</a>
-          <a href="#nosotros">Nosotros</a>
-          <a href="#contacto">Contacto</a>
+          <a href="#inicio">{texts.navbar.home}</a>
+          <a href="#servicios">{texts.navbar.servicios}</a>
+          <a href="#paquetes">{texts.navbar.paquetes}</a>
+          <a href="#nosotros">{texts.navbar.nosotros}</a>
+          <a href="#contacto">{texts.navbar.contacto}</a>
         </div>
 
         <div className={styles.social}>
@@ -47,7 +50,7 @@ export default function Footer() {
       </div>
 
       <div className={styles.bottom}>
-        <p>© 2025 Krabtech. Todos los derechos reservados.</p>
+        <p>{texts.footer.reserv}</p>
       </div>
     </footer>
   );

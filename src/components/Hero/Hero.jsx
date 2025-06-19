@@ -1,21 +1,16 @@
 import styles from "./Hero.module.css";
 import img from "../../assets/pcgamer2.png";
 import React from "react";
+import { useLanguage } from "../Context/LanguageContext";
 
 export default function Hero() {
+  const { texts } = useLanguage();
+
   return (
     <section id="inicio" className={styles.hero}>
       <div className={styles.left}>
-        <h2 className={styles.titulo}>
-          Soluciones
-          <br />
-          tecnologicas
-          <br />
-          para tu PC
-        </h2>
-        <p className={styles.subtitulo}>
-          Reparaciones, limpieza y mantenimiento profesional en Cancun.
-        </p>
+        <h2 className={styles.titulo}>{texts.inicio.title}</h2>
+        <p className={styles.subtitulo}>{texts.inicio.subtitle}</p>
         <div className={styles.botonera}>
           <button
             onClick={() => {
@@ -24,13 +19,13 @@ export default function Hero() {
             }}
             className={styles.btn1}
           >
-            Get Started
+            {texts.inicio.btn1}
           </button>
           <button
             onClick={() => window.open("https://wa.me/5219983785158", "_blank")}
             className={styles.btn2}
           >
-            Support Chat
+            {texts.inicio.btn2}
           </button>
         </div>
       </div>

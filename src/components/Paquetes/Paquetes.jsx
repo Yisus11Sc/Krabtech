@@ -1,19 +1,8 @@
 import styles from "./Paquetes.module.css";
 import React from "react";
 import { FaCheck, FaTimes } from "react-icons/fa";
-
-const beneficios = [
-  "Limpieza interna y externa",
-  "Cambio de pasta térmica",
-  "Optimización de software",
-  "Revisión de temperaturas",
-  "Eliminación de polvo",
-  "Chequeo de hardware",
-  "Reporte detallado",
-  "Actualización de drivers",
-  "Mantenimiento preventivo",
-  "Soporte post-servicio",
-];
+import { useLanguage } from "../Context/LanguageContext";
+ 
 
 const paquetes = {
   Básico: [true, true, false, true, true, false, false, false, true, false],
@@ -21,16 +10,26 @@ const paquetes = {
   Premium: [true, true, true, true, true, true, true, true, true, true],
 };
 
-const precios = {
-  Básico: "$499 MXN",
-  Medio: "$699 MXN",
-  Premium: "$899 MXN",
-};
+
 
 export default function Paquetes() {
+
+  const {texts} = useLanguage();
+  const beneficios = texts.paquetes.beneficios;
+  const precios = [
+  texts.paquetes.precio1,
+  texts.paquetes.precio2,
+  texts.paquetes.precio3,
+  ];
+  const nombrepaq = [
+  texts.paquetes.paq1,
+  texts.paquetes.paq2,
+  texts.paquetes.paq3,
+  ]
+
   return (
     <section id="paquetes" className={styles.section}>
-      <h2 className={styles.title}>Nuestros Paquetes</h2>
+      <h2 className={styles.title}>{texts.paquetes.title}</h2>
 
       {/* Vista escritorio */}
       <div className={styles.tableWrapper}>
@@ -38,9 +37,9 @@ export default function Paquetes() {
           <thead>
             <tr>
               <th></th>
-              <th>Básico</th>
-              <th>Medio</th>
-              <th>Premium</th>
+              <th>{texts.paquetes.paq1}</th>
+              <th>{texts.paquetes.paq2}</th>
+              <th>{texts.paquetes.paq3}</th>
             </tr>
           </thead>
           <tbody>
@@ -78,7 +77,7 @@ export default function Paquetes() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {precios.Básico}
+                  {texts.paquetes.precio1}
                 </a>
               </td>
               <td>
@@ -87,7 +86,7 @@ export default function Paquetes() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {precios.Medio}
+                  {texts.paquetes.precio2}
                 </a>
               </td>
               <td>
@@ -96,7 +95,7 @@ export default function Paquetes() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {precios.Premium}
+                  {texts.paquetes.precio3}
                 </a>
               </td>
             </tr>
@@ -108,8 +107,8 @@ export default function Paquetes() {
       <div className={styles.cardsWrapper}>
         {Object.entries(paquetes).map(([nombre, flags], idx) => (
           <div key={idx} className={styles.card}>
-            <h3>{nombre}</h3>
-            <p className={styles.price}>{precios[nombre]}</p>
+            <h3>{nombrepaq[idx]}</h3>
+            <p className={styles.price}>{precios[idx]}</p>
             <ul>
               {beneficios.map((b, i) => (
                 <li

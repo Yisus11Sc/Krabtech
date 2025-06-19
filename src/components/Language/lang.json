@@ -1,0 +1,178 @@
+{
+  "es": {
+    "navbar": {
+      "home": "Inicio",
+      "servicios": "Servicios",
+      "paquetes": "Paquetes",
+      "nosotros": "Nosotros",
+      "contacto": "Contacto"
+    },
+    "inicio": {
+      "title": "Soluciones tecnologicas para tu PC",
+      "subtitle": "Reparaciones, limpieza y mantenimiento profesional en Cancun",
+      "btn1": "Empezar",
+      "btn2": "Contactar"
+    },
+    "servicios": {
+      "title": "Nuestros Servicios",
+      "list": [
+        {
+          "title": "Mantenimiento de PCs y Laptops",
+          "desc": "Limpieza profunda de tu equipo por dentro y por fuera para prevenir fallas y prolongar su vida útil."
+        },
+        {
+          "title": "Formateo y Optimización del Sistema",
+          "desc": "Instalamos el sistema desde cero y lo dejamos rápido, limpio y listo para trabajar o jugar."
+        },
+        {
+          "title": "Instalación de Software y Drivers",
+          "desc": "Configuramos todos tus programas esenciales y drivers para que tu PC funcione al 100%."
+        },
+        {
+          "title": "Ensamblaje de Equipos",
+          "desc": "Mejoramos o armamos tu computadora con los componentes ideales para tus necesidades."
+        },
+        {
+          "title": "Actualizaciones de Sistema",
+          "desc": "Instalamos los sistemas operativos más actuales y modernos."
+        },
+        {
+          "title": "Instalación y Configuración de Cámaras",
+          "desc": "Colocamos y configuramos sistemas de vigilancia para que puedas monitorear tu hogar o negocio desde cualquier lugar."
+        }
+      ]
+    },
+    "paquetes": {
+      "title": "Nuestros Paquetes",
+      "paq1": "Básico",
+      "paq2": "Medio",
+      "paq3": "Premium",
+      "beneficios": [
+        "Limpieza interna y externa",
+        "Cambio de pasta térmica",
+        "Optimización de software",
+        "Revisión de temperaturas",
+        "Eliminación de polvo",
+        "Chequeo de hardware",
+        "Reporte detallado",
+        "Actualización de drivers",
+        "Mantenimiento preventivo",
+        "Soporte post-servicio"
+      ],
+      "precio1": "$499 MXN",
+      "precio2": "$699 MXN",
+      "precio3": "$899 MXN"
+    },
+    "nosotros": {
+      "title": "¿Quiénes somos?",
+      "desc": "En Krabtech somos apasionados por la tecnología y el servicio al cliente. Nos dedicamos a ofrecer las mejores soluciones de mantenimiento, reparación y optimización de PC en Cancún. Nuestro equipo está compuesto por profesionales jóvenes, capacitados y con un enfoque 100% en calidad, honestidad y rapidez.",
+      "mision": "Misión",
+      "descmision": "Proporcionar servicios de tecnología accesibles, rápidos y confiables, mejorando la experiencia digital de nuestros clientes.",
+      "vision": "Visión",
+      "descvision": "Ser la empresa líder en soluciones de PC en el sureste mexicano, reconocidos por nuestro compromiso, innovación y pasión."
+    },
+    "contacto": {
+      "title": "Contactanos",
+      "desc": "¿Alguna pregunta o cotización? Escríbenos un mensaje",
+      "form1": "Hola, mi nombre es",
+      "form2": "su nombre aqui.",
+      "form3": "y estoy buscando un equipo que me ayude con",
+      "form4": "breve descripcion del proyecto...",
+      "form5": "Puede responderme a",
+      "form6": "su correo aqui.",
+      "btn": "Enviar"
+    },
+    "footer": {
+      "desc": "Soluciones Tecnoligicas en Cancun",
+      "reserv": "© 2025 Krabtech. Todos los derechos reservados."
+    }
+  },
+  "en": {
+    "navbar": {
+      "inicio": "Home",
+      "servicios": "Services",
+      "paquetes": "Packages",
+      "nosotros": "About Us",
+      "contacto": "Contact"
+    },
+    "inicio": {
+      "title": "Technology solutions for your PC",
+      "subtitle": "Repairs, cleaning and professional maintenance in Cancun",
+      "btn1": "Get Started",
+      "btn2": "Support Chat"
+    },
+    "servicios": {
+      "title": "Our Services",
+      "list": [
+        {
+          "title": "PC and Laptop Maintenance",
+          "desc": "Deep cleaning inside and out to prevent failures and extend your device's lifespan."
+        },
+        {
+          "title": "System Format and Optimization",
+          "desc": "We reinstall your OS from scratch and leave it fast, clean, and ready to work or play."
+        },
+        {
+          "title": "Software and Driver Installation",
+          "desc": "We install all essential programs and drivers so your PC runs at 100%."
+        },
+        {
+          "title": "PC Building",
+          "desc": "We upgrade or build your PC with the best components for your needs."
+        },
+        {
+          "title": "System Updates",
+          "desc": "We install the latest operating systems and make sure everything is up to date."
+        },
+        {
+          "title": "Camera Installation and Setup",
+          "desc": "We set up surveillance systems so you can monitor your home or business from anywhere."
+        }
+      ]
+    },
+    "paquetes": {
+      "title": "Our Packages",
+      "paq1": "Basic",
+      "paq2": "Medium",
+      "paq3": "Premium",
+      "beneficios": [
+        "Internal and external cleaning",
+        "Thermal paste replacement",
+        "Software optimization",
+        "Temperature check",
+        "Dust removal",
+        "Hardware check",
+        "Detailed report",
+        "Driver updates",
+        "Preventive maintenance",
+        "Post-service support"
+      ],
+      "precio1": "$26.19 USD",
+      "precio2": "$36.68 USD",
+      "precio3": "$47.18 USD"
+    },
+    "nosotros": {
+      "title": "About us",
+      "desc": "At Krabtech we are passionate about technology and customer service. We are dedicated to offer the best PC maintenance, repair and optimization solutions in Cancun. Our team is composed of young, trained professionals with a 100% focus on quality, honesty and speed.",
+      "mision": "Mission",
+      "descmision": "To provide accessible, fast and reliable technology services, improving the digital experience of our customers.",
+      "vision": "Vision",
+      "descvision": "To be the leading company in PC solutions in the southeast of Mexico, recognized for our commitment, innovation and passion."
+    },
+    "contacto": {
+      "title": "Contact us",
+      "desc": "Any question or quotation? Write us a message",
+      "form1": "Hello, my name is",
+      "form2": "your name here.",
+      "form3": "and I am looking for a team to help me with",
+      "form4": "brief description of the project...",
+      "form5": "You can answer me at",
+      "form6": "your email here.",
+      "btn": "Send"
+    },
+    "footer": {
+      "desc": "Technology Solutions in Cancun",
+      "reserv": "© 2025 Krabtech. All rights reserved."
+    }
+  }
+}

@@ -1,8 +1,10 @@
 import styles from "./Contacto.module.css";
 import img from "../../assets/contact.jpg";
 import React, { useState } from "react";
+import { useLanguage } from "../Context/LanguageContext";
 
 export default function Contacto() {
+  const {texts} = useLanguage();
   const [formData, setFormData] = useState({
     nombre: "",
     mensaje: "",
@@ -24,29 +26,29 @@ export default function Contacto() {
 
   return (
     <section id="contacto" className={styles.contacto}>
-      <h1 className={styles.titulo}>Contactanos</h1>
+      <h1 className={styles.titulo}>{texts.contacto.title}</h1>
       <p className={styles.desc}>
-        ¿Alguna pregunta o cotización? Escríbenos un mensaje
+        {texts.contacto.desc}
       </p>
       <div className={styles.container}>
         <img src={img} alt="Contactanos" className={styles.image} />
         <form className={styles.formulario} onSubmit={handleSubmit}>
           <p className={styles.p1}>
-            Hola, mi nombre es{" "}
+            {texts.contacto.form1}{" "}
             <input
               type="text"
               name="nombre"
-              placeholder="su nombre aqui."
+              placeholder={texts.contacto.form2}
               value={formData.nombre}
               onChange={handleChange}
               required
             />
           </p>
           <p>
-            y estoy buscando un equipo que me ayude con
+            {texts.contacto.form3}
             <textarea
               name="mensaje"
-              placeholder="breve descripcion del proyecto..."
+              placeholder={texts.contacto.form4}
               value={formData.mensaje}
               onChange={handleChange}
               required
@@ -54,17 +56,17 @@ export default function Contacto() {
           </p>
           <hr />
           <p className={styles.p2}>
-            Puedes responderme a{" "}
+            {texts.contacto.form5}{" "}
             <input
               type="email"
-              placeholder="su correo aqui."
+              placeholder={texts.contacto.form6}
               name="email"
               value={formData.email}
               onChange={handleChange}
               required
             />
           </p>
-          <button type="submit">Enviar</button>
+          <button type="submit">{texts.contacto.btn}</button>
         </form>
       </div>
     </section>
