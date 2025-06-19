@@ -2,7 +2,7 @@ import styles from "./Footer.module.css";
 import { FaFacebook, FaWhatsapp } from "react-icons/fa";
 
 import React from "react";
-import { useLanguage } from "../Context/LanguageContext";
+import { useLanguage } from "../Language/Context/LanguageContext";
 
 export default function Footer() {
 

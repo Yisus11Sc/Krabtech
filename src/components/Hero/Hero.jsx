@@ -1,7 +1,7 @@
 import styles from "./Hero.module.css";
 import img from "../../assets/pcgamer2.png";
 import React from "react";
-import { useLanguage } from "../Context/LanguageContext";
+import { useLanguage } from "../Language/Context/LanguageContext";
 
 export default function Hero() {
   const { texts } = useLanguage();

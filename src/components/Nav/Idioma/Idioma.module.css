@@ -4,17 +4,19 @@
 }
 
 .icon {
-  margin-top: 9px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   background: none;
   border: none;
   cursor: pointer;
   color: white;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .dropdown {
   position: absolute;
-  top: 110%;
+  top: 100%;
   right: 0;
   background: linear-gradient(
     180deg,
@@ -48,10 +50,15 @@
   color: #00b4d8;
 }
 
+.langLabel{
+  font-weight: bold;
+  font-size: .9rem;
+}
+
 @media (max-width: 768px) {
   .icon {
-    font-size: 1.9rem;
-    margin-top: 10px;
+    font-size: 1.5rem;
+    margin-top: 4px;
   }
 
   .dropdown {

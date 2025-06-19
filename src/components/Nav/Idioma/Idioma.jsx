@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Idioma.module.css";
 import { MdLanguage } from "react-icons/md";
-import { useLanguage } from "../../Context/LanguageContext";
+import { useLanguage } from "../../Language/Context/LanguageContext";
 
 export default function Idioma() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,6 +14,8 @@ export default function Idioma() {
     setIsOpen(false);
   };
 
+  const langLabel = language === "es" ? "MX" : "US";
+
   return (
     <div className={styles.languageSelector}>
       <button
@@ -22,6 +24,8 @@ export default function Idioma() {
         aria-label="Seleccionar idioma"
       >
         <MdLanguage/>
+        <span className={styles.langLabel}>{langLabel}</span>
+
       </button>
       {isOpen && (
         <div className={styles.dropdown}>

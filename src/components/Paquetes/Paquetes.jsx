@@ -1,7 +1,7 @@
 import styles from "./Paquetes.module.css";
 import React from "react";
 import { FaCheck, FaTimes } from "react-icons/fa";
-import { useLanguage } from "../Context/LanguageContext";
+import { useLanguage } from "../Language/Context/LanguageContext";
  
 
 const paquetes = {

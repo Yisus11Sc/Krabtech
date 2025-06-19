@@ -1,7 +1,7 @@
 import styles from "./About.module.css";
 import React from "react";
 import aboutImage from "../../assets/about.jpg";
-import { useLanguage } from "../Context/LanguageContext";
+import { useLanguage } from "../Language/Context/LanguageContext";
 
 export default function About() {
   const { texts } = useLanguage();

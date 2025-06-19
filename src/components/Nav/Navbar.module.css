@@ -11,6 +11,8 @@
   background-color: transparent;
   background: linear-gradient(90deg, #0d1b2a, #142941);
   z-index: 1000;
+  animation: fade-up 1.5s;
+
 }
 
 .titulo {
@@ -22,8 +24,8 @@
 .navbar {
   display: flex;
   gap: 2rem;
-  animation: fade-up 1.5s;
 }
+
 
 .navbar a {
   position: relative;

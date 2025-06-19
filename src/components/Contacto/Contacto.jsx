@@ -1,7 +1,7 @@
 import styles from "./Contacto.module.css";
 import img from "../../assets/contact.jpg";
 import React, { useState } from "react";
-import { useLanguage } from "../Context/LanguageContext";
+import { useLanguage } from "../Language/Context/LanguageContext";
 
 export default function Contacto() {
   const {texts} = useLanguage();

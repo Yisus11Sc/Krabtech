@@ -1,7 +1,7 @@
 import styles from "./Navbar.module.css";
 import React, { useEffect, useState } from "react";
 import Idioma from "./Idioma/Idioma";
-import { useLanguage } from "../Context/LanguageContext";
+import { useLanguage } from "../Language/Context/LanguageContext";
 
 export default function Navbar() {
     const { texts } = useLanguage();
@@ -47,7 +47,7 @@ useEffect(() => {
           <a href="#contacto" onClick={() => setIsOpen(false)}>{texts.navbar.contacto}</a>
         </nav>
 
-        <Idioma />
+        <Idioma/>
 
         <div
           className={`${styles.hamburguer} ${isOpen ? styles.rotate : ""}`}

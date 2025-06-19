@@ -7,7 +7,7 @@ import imagen3 from "../../assets/serv3.png";
 import imagen4 from "../../assets/serv6.png";
 import imagen5 from "../../assets/serv7.png";
 import imagen6 from "../../assets/serv5.png";
-import { useLanguage } from "../Context/LanguageContext";
+import { useLanguage } from "../Language/Context/LanguageContext";
 
 
 
