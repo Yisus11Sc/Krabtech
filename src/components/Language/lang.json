@@ -89,7 +89,7 @@
   },
   "en": {
     "navbar": {
-      "inicio": "Home",
+      "home": "Home",
       "servicios": "Services",
       "paquetes": "Packages",
       "nosotros": "About Us",
